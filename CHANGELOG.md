@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.2.1](https://github.com/blinkk/degu/compare/v3.2.0...v3.2.1) (2024-04-09)
+
+
+### Features
+
+* add fetch priority to image ([6d49217](https://github.com/blinkk/degu/commit/6d49217f39e559e6a2b0fbe71b782f882132e9cd))
+
+
+### Miscellaneous Chores
+
+* release 3.2.1 ([aab3d77](https://github.com/blinkk/degu/commit/aab3d7766d632e8bc51e1175d54dbca0d9386d46))
+
 ## [3.2.0](https://github.com/blinkk/degu/compare/v3.1.3...v3.2.0) (2023-05-10)
 
 
