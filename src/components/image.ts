@@ -70,6 +70,9 @@ export class DeguImage extends LitElement {
   @property({type: Number, attribute: 'max-dpr'})
   private maxDpr: number = window.devicePixelRatio;
 
+  @property({type: String, attribute: 'fetch-priority'})
+  private fetchPriority: string;
+
   @property() autoRenderWidth = 0;
 
   /**
@@ -170,8 +173,9 @@ export class DeguImage extends LitElement {
 
   private renderImage(src: string) {
     return html`
-      <img
+      <img 
         loading="${this.loading}"
+        fetchPriority=${ifDefined(this.fetchPriority ? this.fetchPriority : null)}
         width=${ifDefined(this.aspectRatioWidth ? this.aspectRatioWidth : null)}
         height=${ifDefined(
           this.aspectRatioHeight ? this.aspectRatioHeight : null
